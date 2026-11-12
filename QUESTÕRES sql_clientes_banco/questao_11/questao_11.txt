@@ -1,0 +1,9 @@
+Questão 11
+
+SELECT 
+    COUNT(*) AS total_contas_encerradas
+FROM 
+    clientes_banco
+WHERE 
+    status_conta = 'Encerrada'
+    AND EXTRACT(YEAR FROM data_referencia) = 2024;

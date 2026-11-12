@@ -1,0 +1,12 @@
+Questão 2
+
+SELECT 
+    nome,
+    saldo
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-04-15'
+ORDER BY 
+    saldo DESC
+LIMIT 1;

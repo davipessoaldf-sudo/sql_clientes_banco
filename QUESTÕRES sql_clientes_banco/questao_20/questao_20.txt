@@ -1,0 +1,9 @@
+Questão 20
+
+SELECT 
+    COUNT(*) AS total_clientes
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-12-15'
+    AND data_nascimento < '1960-01-01';

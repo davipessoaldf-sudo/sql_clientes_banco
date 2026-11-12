@@ -1,0 +1,6 @@
+Questão 3
+
+SELECT 
+    COUNT(DISTINCT id_cliente) AS total_clientes_unicos
+FROM 
+    clientes_banco;

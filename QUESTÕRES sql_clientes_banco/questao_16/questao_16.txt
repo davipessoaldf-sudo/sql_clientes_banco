@@ -1,0 +1,12 @@
+Questão 16
+
+SELECT 
+    tipo_conta,
+    ROUND(AVG(saldo), 2) AS saldo_medio
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-12-15'
+    AND tipo_conta IN ('Poupança', 'Corrente')
+GROUP BY 
+    tipo_conta;

@@ -1,0 +1,9 @@
+Questão 4
+
+SELECT 
+    ROUND(AVG(renda_mensal), 2) AS renda_media_prime
+FROM 
+    clientes_banco
+WHERE 
+    segmento = 'Prime'
+    AND data_referencia = '2024-12-15';

@@ -1,0 +1,10 @@
+Questão 13
+
+SELECT 
+    COUNT(*) AS total_clientes
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-03-15'
+    AND score_credito >= 700
+    AND possui_cartao = false;

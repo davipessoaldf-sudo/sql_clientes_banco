@@ -1,0 +1,14 @@
+Questão 1
+
+SELECT 
+    uf,
+    COUNT(*) AS total_clientes
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-01-15'
+GROUP BY 
+    uf
+ORDER BY 
+    total_clientes DESC
+LIMIT 5;

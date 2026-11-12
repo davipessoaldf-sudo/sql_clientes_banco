@@ -1,0 +1,14 @@
+Questão 5
+
+SELECT 
+    profissao,
+    COUNT(*) AS total_clientes
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-12-15'
+GROUP BY 
+    profissao
+ORDER BY 
+    total_clientes DESC
+LIMIT 3;

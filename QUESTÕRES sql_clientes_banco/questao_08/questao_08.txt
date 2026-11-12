@@ -1,0 +1,9 @@
+Questão 8
+
+SELECT 
+    SUM(saldo) AS soma_saldos_private
+FROM 
+    clientes_banco
+WHERE 
+    segmento = 'Private'
+    AND data_referencia = '2024-12-15';

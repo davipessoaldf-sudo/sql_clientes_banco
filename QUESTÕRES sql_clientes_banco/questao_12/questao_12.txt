@@ -1,0 +1,9 @@
+Questão 12
+
+SELECT 
+    ROUND(AVG(score_credito), 2) AS media_score_df
+FROM 
+    clientes_banco
+WHERE 
+    uf = 'DF'
+    AND data_referencia = '2024-06-15';

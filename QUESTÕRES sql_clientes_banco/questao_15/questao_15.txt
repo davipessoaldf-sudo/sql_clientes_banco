@@ -1,0 +1,8 @@
+Questão 15
+
+SELECT 
+    COUNT(DISTINCT id_cliente) AS total_novos_clientes_2024
+FROM 
+    clientes_banco
+WHERE 
+    EXTRACT(YEAR FROM data_abertura) = 2024;

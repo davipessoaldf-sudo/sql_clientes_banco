@@ -1,0 +1,14 @@
+Questão 14
+
+SELECT 
+    canal_preferido,
+    COUNT(*) AS total_clientes,
+    ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER(), 2) AS percentual
+FROM 
+    clientes_banco
+WHERE 
+    data_referencia = '2024-12-15'
+GROUP BY 
+    canal_preferido
+ORDER BY 
+    total_clientes DESC;

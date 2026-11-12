@@ -1,0 +1,14 @@
+Questão 6
+
+SELECT 
+    data_referencia,
+    COUNT(*) AS total_bloqueadas
+FROM 
+    clientes_banco
+WHERE 
+    status_conta = 'Bloqueada'
+GROUP BY 
+    data_referencia
+ORDER BY 
+    total_bloqueadas DESC
+LIMIT 1;

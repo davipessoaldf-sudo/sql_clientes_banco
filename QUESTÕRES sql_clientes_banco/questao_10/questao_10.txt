@@ -1,0 +1,12 @@
+Questão 10
+
+SELECT 
+    data_referencia,
+    SUM(saldo) AS soma_total_saldos
+FROM 
+    clientes_banco
+GROUP BY 
+    data_referencia
+ORDER BY 
+    soma_total_saldos DESC
+LIMIT 1;

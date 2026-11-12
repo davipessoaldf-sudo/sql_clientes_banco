@@ -1,0 +1,9 @@
+Questão 17
+
+SELECT 
+    MAX(limite_credito) AS maior_limite_varejo
+FROM 
+    clientes_banco
+WHERE 
+    segmento = 'Varejo'
+    AND data_referencia = '2024-12-15';
